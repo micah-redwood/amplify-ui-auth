@@ -7,11 +7,16 @@ export default defineConfig({
   plugins: [
     react(),
     visualizer({
-      // template: "treemap",
       template: "sunburst",
       open: true,
       gzipSize: true,
-      // filename: "analice.html",
+      filename: "sunburst.html",
+    }),
+    visualizer({
+      template: "treemap",
+      open: true,
+      gzipSize: true,
+      filename: "treemap.html",
     }),
   ],
 });
